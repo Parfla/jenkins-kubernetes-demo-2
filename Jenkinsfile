@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        CSRF_TOKEN = credentials('CSRF_TOKEN')
+        leenewcredentials = credentials('leenewcredentials')
     }
     stages {
         stage('Create Secret') {
